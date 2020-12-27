@@ -1,0 +1,16 @@
+ALGORITHM algorithm_name
+VAR
+    T1:ARRAY_OF INTEGER[];
+    T2:ARRAY_OF INTEGER[];
+    i,j:INTEGER;
+    sum:INTEGER:=0;
+BEGIN
+    FOR (i:=0,i<t1.length,ji++)DO
+    FOR (j:=0,j<t1.length,j++)DO
+    WHILE (T1[i]==T2[j]) DO
+      sum+=T1[i]+T2[j];
+    END_WHILE
+    END_FOR
+    END_FOR
+    write(sum);
+END

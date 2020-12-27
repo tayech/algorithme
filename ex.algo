@@ -1,0 +1,31 @@
+algorithme
+var
+i,j,l,k:integer;
+t1:ARRAY_OF INTEGER[];
+t2:ARRAY_OF INTEGER[];
+debut
+somme:=0;
+pour i de 1 a n faire
+existe:=faux;
+pour j de 1 a n faire
+si(t1[i]=t2[j])alors
+exist:=vrai;
+finsi 
+finpour
+if(exist=faux)alors
+somme+=t1[i];
+finsi
+finpour
+pour i de 1 a n faire
+existe:=faux;
+pour j de 1 a n faire
+si(t1[i]=t2[j])alors
+exist:=vrai;
+finsi 
+finpour
+if(exist=faux)alors
+somme+=t1[j];
+finsi
+finpour
+write(somme);
+fin

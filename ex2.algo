@@ -1,0 +1,16 @@
+ALGORITHM 
+VAR
+     ht1 : HASH_TABLE<INTEGER,INTEGER>;
+     ht2: HASH_TABLE<INTEGER,INTEGER>;
+     i,j:INTEGER;
+     sum:INTEGER:=0;
+BEGIN
+    for(i:=0,i<ht1.length,i++)DO
+    for(j:=0,j<ht2.length,j++)DO
+    if(ht1.lookup(ht2[j]))THEN
+    sum+=ht2.get[j]+ht1.get[i];
+    END_IF  
+    END_FOR
+    END_FOR
+    write(sum);
+END
